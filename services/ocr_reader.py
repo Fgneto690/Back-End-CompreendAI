@@ -2,9 +2,9 @@ import pytesseract
 from PIL import Image, ImageFilter, ImageOps
 
 def preprocessar_imagem(imagem):
-    imagem = imagem.convert("L")  # Converte para tons de cinza
-    imagem = ImageOps.invert(imagem)  # Inverte preto e branco
-    imagem = imagem.filter(ImageFilter.SHARPEN)  # Aplica leve nitidez
+    imagem = imagem.convert("L")
+    imagem = ImageOps.invert(imagem)  
+    imagem = imagem.filter(ImageFilter.SHARPEN) 
     return imagem
 
 def ler_imagem(file_obj):

@@ -1,6 +1,6 @@
 import fitz
 
-# Criar função que recebe caminho de um PDF e retorna o texto
+# função que recebe caminho de um PDF e retorna o texto
 def ler_pdf(file_obj):
     try:
         file_obj.seek(0)
